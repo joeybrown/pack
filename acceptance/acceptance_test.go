@@ -2194,10 +2194,7 @@ func testAcceptance(
 								assert.Nil(err)
 
 								assertOutput := assertions.NewOutputAssertionManager(t, output)
-								assertOutput.ReportsRunImageStackNotMatchingBuilder(
-									"other.stack.id",
-									"pack.test.stack",
-								)
+								assertOutput.ReportsRunImageStackNotMatchingBuilder()
 							})
 						})
 					})

@@ -109,7 +109,7 @@ func (o OutputAssertionManager) ReportsSkippingRestore() {
 	o.assert.Contains(o.output, "Skipping 'restore' due to clearing cache")
 }
 
-func (o OutputAssertionManager) ReportsRunImageStackNotMatchingBuilder(runImageStack, builderStack string) {
+func (o OutputAssertionManager) ReportsRunImageStackNotMatchingBuilder() {
 	o.testObject.Helper()
 
 	o.assert.Contains(o.output, "Warning: deprecated usage of stack")
